@@ -2,6 +2,9 @@
 body, html {
   height: 100%;
 }
+body {
+  background: url(../images/body_bg.png) 0 201px repeat-x;
+}
 #wrapper {
   position: relative;
   min-height: 100%;
@@ -21,14 +24,30 @@ body, html {
 #top > div {
   background: url(../images/trusses.png) no-repeat;
 }
-#logo {
+#top > div > div {
+  position: relative;
+}
+#logo > div {
   padding: 20px;
 }
 #menu {
   background: url(../images/menu_bg.png);
 }
-#content {
-  background: url(../images/content_bg.png) top repeat-x;
+#content > div {
+  background: url(../images/content_bg.png) no-repeat;
+  box-shadow: 2px 2px 2px black;
+  margin: 0 auto 32px;
+  padding: 25px 33px;
+  width: 934px;
+}
+#sidebar {
+  float: left;
+  width: 325px;
+}
+#component {
+  float: left;
+  margin-left: 33px;
+  width: 575px;
 }
 #footer-spacer {
   height: 111px;
@@ -36,6 +55,7 @@ body, html {
 #footer {
   background: url(../images/footer_bg.png) repeat-x;
   bottom: 0;
+  color: white;
   font-size: 10px;
   height: 91px;
   padding-top: 20px;
@@ -50,10 +70,6 @@ body, html {
 #menu > div {
   min-height: 50px;
 }
-#component > div {
-  min-height: 300px;
-}
-#bottom > div {
-  background: yellow;
-  min-height: 200px;
+#content {
+  padding-top: 30px;
 }
