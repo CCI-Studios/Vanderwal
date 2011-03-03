@@ -1,0 +1,53 @@
+/* layout.css */
+body, html { height: 100%; }
+body {
+
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+#top > div > div, #logo > div,
+#menu > div, #content > div,
+#bottom > div, #footer > div {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+
+#top { background: url(../images/header.png) no-repeat top; }
+#top > div { background: url(../images/trusses.png) no-repeat; }
+#top > div > div { }
+
+#logo { padding: 20px; }
+#menu { background: url(../images/menu_bg.png); }
+
+#content {
+	background: url(../images/content_bg.png) top repeat-x;
+}
+#component {}
+#bottom {}
+
+#footer-spacer { height: 111px; }
+#footer {
+	background: url(../images/footer_bg.png) repeat-x;
+	bottom: 0;
+	font-size: 10px;
+	height: 91px;
+	padding-top: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+/* dummy crap */
+#top > div > div { min-height: 50px; }
+#menu > div { min-height: 50px; }
+
+#component > div { min-height: 300px; }
+#bottom > div { background: yellow; min-height: 200px; }

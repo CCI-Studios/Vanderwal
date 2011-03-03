@@ -1,0 +1,36 @@
+/* modules.less */
+.moduletable_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.moduletable_menu li {
+  display: inline;
+  padding: 0 4px;
+}
+.moduletable_menu li > a, .moduletable_menu li > span {
+  color: white;
+}
+.moduletable_menu li:hover > a, .moduletable_menu li:hover > span {
+  color: #EEE210;
+  text-decoration: none;
+}
+#menu .moduletable_menu li {
+  background: url(../images/menu_item_bg.png) no-repeat;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18px 0 18px 34px;
+}
+#menu .moduletable_menu li > a, #menu .moduletable_menu li > span {
+  line-height: 51px;
+}
+#menu .moduletable_menu li:hover > a, #menu .moduletable_menu li:hover > span {
+  color: white;
+}
+#menu .moduletable_menu li:hover {
+  background: url(../images/menu_item_hover_bg.png) no-repeat;
+}
+#menu .moduletable_menu li:hover + li {
+  background: url(../images/menu_item_hover_after_bg.png) no-repeat;
+}

@@ -1,0 +1,49 @@
+/* modules.less */
+.moduletable_menu {
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline;
+		padding: 0 4px;
+
+		> a, > span {
+			color: white;
+		}
+
+		&:hover > a, &:hover > span {
+			color: #EEE210;
+			text-decoration: none;
+		}
+	}
+}
+
+
+#menu .moduletable_menu {
+	ul {
+
+	}
+
+	li {
+		background: url(../images/menu_item_bg.png) no-repeat;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 18px 0 18px 34px;
+
+		> a, > span {
+			line-height: 51px;
+		}
+
+		&:hover > a, &:hover > span {
+			color: white;
+		}
+
+		&:hover { background: url(../images/menu_item_hover_bg.png) no-repeat; }
+		&:hover + li { background: url(../images/menu_item_hover_after_bg.png) no-repeat; }
+	}
+}
