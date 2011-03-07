@@ -11,8 +11,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+#content a, #bottom a {
+  color: #418DC9;
+}
+#sidebar a {
+  color: #000;
+}
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
 }
 h1,
 h2,
@@ -37,4 +43,46 @@ h1 {
 }
 h2 {
   color: #676767;
+}
+strong {
+  font-weight: bold;
+}
+/* forms */
+label {
+  float: left;
+  margin: 0 10px 0 0;
+  text-align: right;
+  width: 150px;
+}
+input[type="text"], textarea {
+  background: none;
+  border: 1px solid #AAA;
+  padding: 3px 5px;
+}
+.form_item {
+  margin-bottom: 0.5em;
+}
+.cf_captcha label {
+  display: block;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+.cf_captcha img {
+  float: left;
+}
+.cf_captcha input {
+  float: left;
+  margin: 9px 5px 9px 160px;
+}
+.cf_button input {
+  margin-left: 160px;
+}
+.cfclear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}
+.chronoform {
+  display: none;
 }

@@ -23,9 +23,22 @@ body {
 #top > div > div { height: 52px; position: relative; }
 
 #logo > div { padding: 20px; }
-#menu { background: url(../images/menu_bg.png); }
+#menu {
+	background: url(../images/menu_bg.png);
+	margin-bottom: 32px;
+}
 
-#content { margin: 32px 0; padding: 1px 0; }
+#user1 {
+	margin: 32px 0 7px;
+
+	> div {
+		padding-left: 30px;
+		width: 970px;
+	}
+}
+
+
+#content { margin: 7px 0 32px; padding: 1px 0; }
 #content > div {
 	background: url(../images/content_bg.png) 0 0 no-repeat;
 	padding-top: 37px;
@@ -38,6 +51,7 @@ body {
 #content > div > div > div {
 	background: url(../images/content_bg.png) -2016px repeat-y;
 	padding: 0 39px 0 34px;
+	zoom: 1;
 }
 
 body.home #content {

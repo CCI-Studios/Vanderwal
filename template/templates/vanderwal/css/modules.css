@@ -109,6 +109,8 @@
 #bottom .module > div > div {
   background: url(../images/bottom_bg.png) -608px repeat-y;
   padding: 1px 30px 1px 23px;
+  position: relative;
+  zoom: 1;
 }
 #bottom .module.wide {
   background: url(../images/bottom_bg2.png) 0 top no-repeat;
@@ -125,4 +127,9 @@
   margin: 0 0 -5px;
   position: relative;
   top: -19px;
+}
+#bottom .module .readmore {
+  position: absolute;
+  bottom: 0;
+  right: 35px;
 }
