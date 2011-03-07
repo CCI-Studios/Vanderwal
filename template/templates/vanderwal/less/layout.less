@@ -9,6 +9,7 @@ body {
 	min-height: 100%;
 }
 
+#user1 > div,
 #top > div > div, #logo > div,
 #menu > div, #content > div,
 #bottom > div, #footer > div {
@@ -19,17 +20,45 @@ body {
 
 #top { background: url(../images/header.png) no-repeat top; }
 #top > div { background: url(../images/trusses.png) no-repeat; }
-#top > div > div { position: relative; }
+#top > div > div { height: 52px; position: relative; }
 
 #logo > div { padding: 20px; }
 #menu { background: url(../images/menu_bg.png); }
 
+#content { margin: 32px 0; padding: 1px 0; }
 #content > div {
-	background: url(../images/content_bg.png) no-repeat;
-	box-shadow: 2px 2px 2px black;
-	margin: 0 auto 32px;
-	padding: 25px 33px;
-	width: 934px;
+	background: url(../images/content_bg.png) 0 0 no-repeat;
+	padding-top: 37px;
+	width: 1008px;
+}
+#content > div > div {
+	background: url(../images/content_bg.png) -1008px bottom no-repeat;
+	padding-bottom: 17px;
+}
+#content > div > div > div {
+	background: url(../images/content_bg.png) -2016px repeat-y;
+	padding: 0 39px 0 34px;
+}
+
+body.home #content {
+	margin-bottom: -33px;
+
+	> div {
+		background: none;
+		padding: 0;
+
+		> div {
+			background: none;
+			padding-bottom: 0;
+
+			> div {
+				background: none;
+			}
+		}
+	}
+
+	#title { display: none; }
+	#component { float: none; }
 }
 
 #title {}
@@ -44,7 +73,9 @@ body {
 	margin-left: 33px;
 	width: 575px;
 }
-#bottom {}
+#component.wide { margin-left: 0; width: 100%; }
+
+#bottom { margin: 23px 0; padding: 1px 0; }
 
 #footer-spacer { height: 111px; }
 #footer {
@@ -58,10 +89,3 @@ body {
 	text-align: center;
 	width: 100%;
 }
-
-/* dummy crap */
-#top > div > div { min-height: 50px; }
-#menu > div { min-height: 50px; }
-
-#content { padding-top: 30px; }
-
