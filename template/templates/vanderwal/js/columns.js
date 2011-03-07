@@ -5,9 +5,8 @@
 
 		for (i = 0; i < elements.length; i++) {
 			t = elements[i].getElement('div').getElement('div');
-			console.log(t);
 			if (t.getSize().size.y > height)
-				height = elements[i].getSize().size.y;
+				height = t.getSize().size.y;
 		}
 
 		for (i = 0; i < elements.length; i++) {
