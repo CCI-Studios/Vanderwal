@@ -31,6 +31,7 @@
 		<position>menu</position>
 		<position>sidebar</position>
 		<position>top</position>
+		<position>user1</position>
 
 		<position>hidden</position>
     </positions>
