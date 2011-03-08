@@ -51,14 +51,17 @@
 .moduletable_vmenu li:hover, .moduletable_vmenu li.active {
   background: #f1f1f1 url(../images/triangle.png) right no-repeat;
 }
+#menu .moduletable_hmenu {
+  margin-bottom: 2px;
+}
 #menu .moduletable_hmenu li {
-  background: url(../images/menu_item_bg.png) no-repeat;
+  background: url(../images/menu_item_bg.png) 0 0 no-repeat;
   font-size: 14px;
   font-weight: bold;
-  padding: 18px 0 18px 34px;
+  padding: 17px 0 18px 34px;
 }
 #menu .moduletable_hmenu li > a, #menu .moduletable_hmenu li > span {
-  line-height: 51px;
+  line-height: 50px;
 }
 #menu .moduletable_hmenu li:hover > a,
 #menu .moduletable_hmenu li:hover > span,
@@ -123,7 +126,7 @@
 #bottom .module.wide > div > div {
   background: url(../images/bottom_bg2.png) -758px repeat-y;
 }
-#bottom .module h3 {
+#bottom .module h3:first-child {
   margin: 0 0 -5px;
   position: relative;
   top: -19px;
