@@ -524,9 +524,7 @@ break;
 <?php
 		if ($params_morfeo['back'] == 0) { ?>
 			<div class="back_button" align="center">
-			<a href="index.php?option=com_morfeoshow&Itemid=<?php echo JRequest::getVar('Itemid', NULL); ?>">
-				<?php echo JText::_( 'Back' ); ?></a>
-			</div>
+			<a href="javascript:history.go(-1)"><?php echo JText::_( 'Back' ); ?></a></div>
 <?php
 		echo '</td></tr></table>';
 		} else {
