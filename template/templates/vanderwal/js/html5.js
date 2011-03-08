@@ -12,6 +12,7 @@
 
 			if (input.getProperty('placeholder')) {
 				placeholder = input.getProperty('placeholder');
+				input.value = placeholder
 
 				input.addEvents({
 					focus: function() {
