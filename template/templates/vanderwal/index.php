@@ -6,6 +6,8 @@ if ($menu)
 if ($menu)
     $menu = $menu->alias;
 $testing = "true";
+
+JHtml::_('behavior.mootools');
 ?>
 <html>
 <head>

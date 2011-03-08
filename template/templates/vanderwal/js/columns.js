@@ -15,7 +15,7 @@
 		}
 	}
 
-	window.addEvent('domready', function() {
+	window.addEvent('load', function() {
 		setHeight($$('#bottom .module'));
 	});
 })(this, this.document);
