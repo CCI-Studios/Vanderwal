@@ -16,6 +16,8 @@ JHtml::_('behavior.mootools');
 	<link rel="stylesheet" href="/templates/vanderwal/css/template.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<script src="/templates/vanderwal/js/columns.js" ></script>
 	<script src="/templates/vanderwal/js/html5.js" ></script>
+
+	<link rel="shortcut icon" type="image/x-icon" href="/templates/vanderwal/images/favicon.ico" />
 </head>
 
 <body class="<?php echo $menu; ?>">
